@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Story</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#141e30,#243b55);
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1519681393784-d120267933ba") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+animation:fade 2s;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin-top:10px;
+}
+
+/* STORY CARDS */
+
+.story{
+padding:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+padding:20px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* IMAGE */
+
+.gallery{
+padding:50px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:250px;
+border-radius:15px;
+transition:0.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+/* VIDEO */
+
+.video-section{
+padding:60px;
+text-align:center;
+}
+
+video{
+width:350px;
+margin:15px;
+border-radius:15px;
+box-shadow:0 0 15px #00eaff;
+}
+
+/* IFRAME */
+
+.iframe-section{
+text-align:center;
+padding:60px;
+}
+
+iframe{
+border-radius:15px;
+}
+
+/* AUDIO */
+
+.audio-section{
+text-align:center;
+padding:60px;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+/* ANIMATION */
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>Story World 📖</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Stories</a>
+<a href="#">Gallery</a>
+<a href="#">Videos</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Magical Stories</h1>
+<p>Discover beautiful stories and imagination</p>
+
+</section>
+
+<!-- STORY SECTION -->
+
+<section class="story">
+
+<div class="card">
+<h3>The Lost Forest</h3>
+<p>A mysterious forest full of magic and adventure.</p>
+</div>
+
+<div class="card">
+<h3>The Moon Girl</h3>
+<p>A girl who dreamed of touching the moon.</p>
+</div>
+
+<div class="card">
+<h3>The Hidden Island</h3>
+<p>An island where secrets are waiting to be discovered.</p>
+</div>
+
+</section>
+
+<!-- IMAGE GALLERY -->
+
+<section class="gallery">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+
+<img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+
+</section>
+
+<!-- VIDEO SECTION -->
+
+<section class="video-section">
+
+<h2>Story Videos 🎬</h2>
+
+<video controls>
+<source src="c:\Users\Lenovo\Downloads\21664-320282109_medium.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="c:\Users\Lenovo\Downloads\144342-784384641_medium.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<!-- IFRAME -->
+
+<section class="iframe-section">
+
+<h2>Story Animation</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DvRx6vw9dJE" title="The Woodcutter And His Axe | Kids Hut Stories | Stories For Kids In English | Animated Stories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</section>
+
+<!-- AUDIO -->
+
+<section class="audio-section">
+
+<h2>Story Background Music 🎧</h2>
+
+<audio controls>
+<source src="c:\Users\Lenovo\Downloads\sad_music.mp3" type="audio/mp3">
+</audio>
+
+</section>
+
+<footer>
+
+<p>© 2026 Story World</p>
+
+</footer>
+
+</body>
+</html>
